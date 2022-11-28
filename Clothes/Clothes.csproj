@@ -82,6 +82,7 @@
       <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="Slapper, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Slapper.AutoMapper.2.0.1\lib\net46\Slapper.dll</HintPath>
     </Reference>
@@ -114,6 +115,7 @@
     <Compile Include="DBComponment\DapperBase.cs" />
     <Compile Include="DBComponment\IDapper.cs" />
     <Compile Include="Extension\BoolExtension.cs" />
+    <Compile Include="Extension\ComboUtil.cs" />
     <Compile Include="Extension\DataTableExtensions.cs" />
     <Compile Include="Extension\DateTimeExtecsion.cs" />
     <Compile Include="Extension\DecimalExtension.cs" />
@@ -124,6 +126,19 @@
     <Compile Include="Function\CM22.Designer.cs">
       <DependentUpon>CM22.cs</DependentUpon>
     </Compile>
+    <Compile Include="Function\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Function\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SelectItem.cs" />
     <Compile Include="Models\T00.cs" />
     <Compile Include="Models\T01.cs" />
     <Compile Include="Models\T02.cs" />
@@ -156,6 +171,12 @@
     </Compile>
     <EmbeddedResource Include="Function\CM22.resx">
       <DependentUpon>CM22.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Function\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

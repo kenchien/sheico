@@ -18,13 +18,13 @@ namespace Clothes {
          Application.SetCompatibleTextRenderingDefault(false);
 
 
-         string connectionString = ConfigurationManager.ConnectionStrings["Clothes.Properties.Settings.sheicoConnectionString"].ToString();
-         IDapper dapper = new DapperBase(connectionString);
-         IRepository<T14> t14Repository = new Repository<T14>(dapper);
+         Application.Run(new MainForm());
 
-
-         CM22Service service = new CM22Service(t14Repository);
-         Application.Run(new CM22(service));
+         //string connectionString = ConfigurationManager.ConnectionStrings["Clothes.Properties.Settings.sheicoConnectionString"].ToString();
+         //IDapper dapper = new DapperBase(connectionString);
+         //IRepository<T14> t14Repository = new Repository<T14>(dapper);
+         //CM22Service service = new CM22Service(t14Repository);
+         //Application.Run(new CM22(service));
       }
    }
 }
